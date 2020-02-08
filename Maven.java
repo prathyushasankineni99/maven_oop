@@ -1,12 +1,6 @@
-public interface Newyearsgift {
-public void chocolates(int c);
-public void biscuits(int c);
-}
 
-----------------------
-/
 import java.util.Scanner;
-public class App implements Newyearsgift {
+public class Maven implements Newyearsgift {
 int cost;
 public void chocolates(int c)
 {cost=c;
@@ -19,9 +13,9 @@ public static void main(String[] args) {
 Scanner sc=new Scanner(System.in);
 System.out.println("Enter the number of chocolates");
 int c=sc.nextInt();
-App c1[]=new App[c];
+Maven c1[]=new Maven[c];
 for(int i=0;i<c;i++)
-{c1[i]=new App();
+{c1[i]=new Maven();
 }
 System.out.println("Enter the cost of chocolates");
 for(int i=0;i<c;i++)
@@ -30,9 +24,9 @@ c1[i].chocolates(cos);
 }
 System.out.println("Enter the number of biscuits");
 int b=sc.nextInt();
-App b1[]=new App[b];
+Maven b1[]=new Maven[b];
 for(int i=0;i<b;i++)
-{b1[i]=new App();
+{b1[i]=new Maven();
 }
 System.out.println("Enter the cost of chocolates");
 for(int i=0;i<b;i++)
